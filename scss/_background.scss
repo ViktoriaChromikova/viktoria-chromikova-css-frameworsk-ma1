@@ -1,0 +1,42 @@
+body{
+    background-color: $colour-background;
+}
+.header{
+    background-color: $colour-regular;
+}
+main{
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 30px;
+}
+.navbar-toggler{
+    border: none;
+}
+h1{
+    text-align: center;
+}
+.navbar-nav .nav-item .active > .nav-link{
+    color: $colour-pink;
+}
+footer{
+    background-color: $colour-white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(min-width: $breakpoint-mobiledevice){
+    footer{
+    background-color: $colour-regular;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    padding:15px;
+    width: 100%;
+    bottom:0;
+    }
+}

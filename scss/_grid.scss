@@ -1,0 +1,43 @@
+.grid{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: grid;
+}
+.grid__item{
+    margin:30px;
+    min-height: 250px;
+    min-width: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    border-style: solid;
+    border-color: $colour-shade;
+    box-shadow: 5px $colour-shade;
+
+    border-radius: 15%;
+    background-color: $colour-regular;
+}
+
+.product--white{
+    background-color: $colour-white;
+    border-color: $colour-pink;
+}
+.product--pink{
+    background-color: $colour-pink;
+    border-color: $colour-white;
+}
+@media(min-width: $breakpoint-mobiledevice){
+    .grid{
+        width:fit-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .grid__item{
+        min-width: 180px;
+        min-height: 180px;
+        max-width: 180px;
+        max-height: 180px;
+        
+    }
+  
+}
